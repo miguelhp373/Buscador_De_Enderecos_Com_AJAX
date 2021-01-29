@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Endereços</title>
+    <link rel="stylesheet" href="styles/root.css">
+    <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/API.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Descubra a Localização Apenas Inserindo o CEP</h1>
+        </div>
+        <div class="form">
+            <input type="text" id="cep-input" placeholder="CEP: 00.000-000" maxlength="8" title="Insira Apenas Números">
+            <button class="btn-search" id="btn-search"><i class="fas fa-search"></i></button>
+        </div>
+        <br>
+        <center><span id="search-text"><!--Status--></span></center>
+        <br>
+        <hr>
+        <div class="result">
+            <div class="Rua" id="01-result">
+                RUA:<span><!--JsonResult--></span>
+            </div>
+            <div class="Bairro" id="02-result">
+                Bairro:<span><!--JsonResult--></span>
+            </div>
+            <div class="Cidade" id="03-result">
+                Cidade:<span><!--JsonResult--></span>
+            </div>
+            <div class="Estado" id="04-result">
+                Estado:<span><!--JsonResult--></span>
+            </div>
+            <div class="DDD" id="05-result">
+                DDD:<span><!--JsonResult--></span>
+            </div>
+        </div>
+        <div class="buttonSalvar">
+        <button class="btn-save" id ="btn-save" disabled><i class="fas fa-save"></i><span>Salvar</span></button>
+        </div>
+
+    </div>
+</body>
+
+</html>
